@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portafolio — Santiago Carmona</title>
+  <meta name="description" content="Portafolio personal de Tu Nombre — Desarrollador/a, diseñador/a, creador/a" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">Santiago Carmona</a>
+      <nav class="nav" id="nav">
+        <a href="#about">Sobre mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#contact">Contacto</a>
+        <a class="btn-resume" href="curriculum.html">Currículum</a>
+
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">🌓</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hola, soy Santiago Carmona</h1>
+          <p>Desarrollador/a web y diseñador/a de experiencias. Hago aplicaciones accesibles, rápidas y bonitas.</p>
+          <p class="hero-cta">
+            <a class="cta" href="#projects">Ver proyectos</a>
+            <a class="cta outline" href="#contact">Contactarme</a>
+          </p>
+        </div>
+        <div class="hero-avatar" aria-hidden="true">
+          <img src="https://via.placeholder.com/320x320.png?text=Tu+Foto" alt="Tu foto" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>Sobre mí</h2>
+      <div class="grid about-grid">
+        <div>
+          <p>Soy un/a profesional interesado/a en crear productos digitales con enfoque en usabilidad, rendimiento y accesibilidad. Me especializo en desarrollo front-end y diseño de interfaces.</p>
+          <ul>
+            <li>Experiencia en HTML, CSS, JavaScript</li>
+            <li>Frameworks: React / Vue (ajusta según tu stack)</li>
+            <li>Diseño responsive y accesible</li>
+          </ul>
+        </div>
+        <div class="quote">
+          <strong>"Diseño con intención y código con propósito."</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Proyectos</h2>
+      <div class="grid projects-grid">
+        <!-- Proyecto 1 -->
+        <article class="card">
+          <img src="https://via.placeholder.com/800x450.png?text=Proyecto+1" alt="Captura del proyecto 1">
+          <div class="card-body">
+            <h3>Proyecto 1 — Nombre</h3>
+            <p>Breve descripción del proyecto: qué hace, qué tecnologías usaste y el impacto.</p>
+            <p class="card-actions">
+              <a href="#" target="_blank" rel="noopener">Ver demo</a>
+              <a href="#" target="_blank" rel="noopener">Código</a>
+            </p>
+          </div>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="card">
+          <img src="https://via.placeholder.com/800x450.png?text=Proyecto+2" alt="Captura del proyecto 2">
+          <div class="card-body">
+            <h3>Proyecto 2 — Nombre</h3>
+            <p>Breve descripción del proyecto: objetivo, retos y solución.</p>
+            <p class="card-actions">
+              <a href="#" target="_blank" rel="noopener">Ver demo</a>
+              <a href="#" target="_blank" rel="noopener">Código</a>
+            </p>
+          </div>
+        </article>
+
+        <!-- Proyecto 3 -->
+        <article class="card">
+          <img src="https://via.placeholder.com/800x450.png?text=Proyecto+3" alt="Captura del proyecto 3">
+          <div class="card-body">
+            <h3>Proyecto 3 — Nombre</h3>
+            <p>Breve descripción del proyecto: stack y resultados.</p>
+            <p class="card-actions">
+              <a href="#" target="_blank" rel="noopener">Ver demo</a>
+              <a href="#" target="_blank" rel="noopener">Código</a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2>Habilidades</h2>
+      <div class="skills">
+        <div class="skill">
+          <h4>Frontend</h4>
+          <p>HTML, CSS, JavaScript, React, Vue</p>
+        </div>
+        <div class="skill">
+          <h4>Diseño</h4>
+          <p>Figma, UX, accesibilidad (a11y)</p>
+        </div>
+        <div class="skill">
+          <h4>Otros</h4>
+          <p>Node.js, Git, CI/CD</p>
+        </div>
+        <div class="skill">
+          <h4>Idiomas</h4>
+          <p>Español (nativo)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contacto</h2>
+      <div class="contact-grid">
+        <form id="contactForm" class="contact-form">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+
+        <div class="contact-info">
+          <p>¿Prefieres correo directo? <a href="mailto:santiagocarmonacanas@gmail.com">santiagocarmonacanas@gmail.com</a></p>
+          <p>Sígueme: <a href="#" target="_blank">GitHub</a> · <a href="#" target="_blank">LinkedIn</a></p>
+          <p class="small">También disponible para freelance y colaboraciones.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Tu Nombre. Hecho con ♥.</p>
+    </div>
+  </footer>
+  
+    <div class="footer-bottom">
+        &copy;ladding Page - Todos los derechos reservados | Diseñado por <strong>Santiago Carmona Cañas</strong>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
